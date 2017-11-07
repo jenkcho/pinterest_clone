@@ -17,6 +17,7 @@ gem 'devise', '~> 4.2'
 gem 'autoprefixer-rails'
 gem 'coffee-script-source', '~> 1.10'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.4'
 
 
