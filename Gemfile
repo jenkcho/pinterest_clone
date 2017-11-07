@@ -9,20 +9,23 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-gem 'turbolinks'
+gem 'turbolinks', '~> 5.0', '>= 5.0.1'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sprockets', '~> 3.5', '>= 3.5.2'
 gem 'devise', '~> 4.2'
 gem 'autoprefixer-rails'
 gem 'coffee-script-source', '~> 1.10'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'masonry-rails', '~> 0.2.4'
+
 
 group :development, :test do
   gem 'sqlite3'
 end
 
 group :development do
-  gem 'pg', '0.17.1'
+  gem 'pg', '0.17.1', group: :production
   gem 'rails_12factor', '0.0.2'
 end
 
