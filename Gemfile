@@ -19,7 +19,7 @@ gem 'coffee-script-source', '~> 1.10'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.4'
-
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 
 group :development, :test do
   gem 'sqlite3'
