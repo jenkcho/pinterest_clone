@@ -1,8 +1,8 @@
-<div class="jumbotron">
-    <h1>Welcome To Jennifer's App!</h1>
-    <p>This will be my first (polished) app ever!</p>
-    <p>Please stay tuned as my new app develops. It may not be <strong>mind</strong> blowing, but everyone starts somewhere!</p>
+<div class="jumbotron center">
+    <h1>Welcome To Pinterested!</h1>
+    <p>A Pinterest clone by Jenkcho</p>
     
-    <%=link_to 'About Us', home_about_path, class:'btn btn-info'%>
-    <%=link_to 'Home', root_path, class: 'btn btn-info' %>
+    <%= link_to "Login", new_user_session_path, class:"btn btn-default" %>
+    <%= link_to "Join", new_user_registration_path, class:"btn btn-primary" %>
+
 </div>
