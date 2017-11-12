@@ -1,8 +1,4 @@
 <%= render 'home/jumbo' if !user_signed_in? %>
-
-<h1>Listing Pins</h1>
-<%= link_to 'New Pin', new_pin_path, class: "btn btn-primary"%><br><br>
-
  
     <div id="pins" class="transitions-enabled masonry">
           <% @pins.each do |pin| %>
@@ -14,14 +10,14 @@
         </div>
         <% if pin.user == current_user %>
         <div class="panel-footer">
-        <%= link_to 'Edit', edit_pin_path(pin), class: 'btn btn-primary'%><span> </span>
-        <%= link_to 'Destroy', pin, method: :delete, class: 'btn btn-primary', data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Edit', edit_pin_path(pin)%> |
+        <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
         <% end %>
       </div>
       </div>
     <% end %>
     </div>
-
-
-
+<div class="center">
+<%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
+</div>
